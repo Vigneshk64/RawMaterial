@@ -1,0 +1,62 @@
+/* Ensure full height */
+.full-screen-container {
+  height: 100vh; /* Force it to take full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Spread content */
+  align-items: center;
+  background: #ffffff;
+  padding: 20px 0; /* Add padding to avoid tight spacing */
+}
+
+/* Center product content */
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Fix order details spacing */
+.order-details {
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Ensure input and buttons are properly aligned */
+.quantity-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Button styles */
+.cancel-btn {
+  background: transparent;
+  color: red;
+  border: 2px solid red;
+}
+
+.track-btn {
+  background: transparent;
+  color: orange;
+  border: 2px solid orange;
+}
+
+.order-btn {
+  background: green;
+  color: white;
+  border: none;
+}

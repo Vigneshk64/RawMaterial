@@ -1,0 +1,81 @@
+/* Force the carousel to take full width */
+.slider-container {
+  width: 100vw; /* Full viewport width */
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Make images stretch to full width */
+.slider-image {
+  width: 100vw; /* Full viewport width */
+  height: 550px; /* Adjust as needed */
+  object-fit: cover; /* Prevent distortion */
+  display: block;
+}
+
+/* Fix positioning of captions */
+.carousel-caption {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text visibility */
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Style the heading */
+.slider-head {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Style the description */
+.slider-para {
+  font-size: 18px;
+  color: white;
+  margin-top: 5px;
+}
+
+/* Style the button */
+.slider-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.slider-button:hover {
+  background-color: #e64a19;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .slider-image {
+    height: 350px;
+  }
+
+  .slider-head {
+    font-size: 24px;
+  }
+
+  .slider-para {
+    font-size: 16px;
+  }
+
+  .slider-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
